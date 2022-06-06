@@ -1,60 +1,63 @@
 .form {
-    position: relative;
+  position: relative;
 }
 
 .form__input {
-    font-size: 14px;
-    line-height: 16px;
-    font-style: normal;
-    font-weight: normal;
-    font-family: Roboto, 'san-serif';
-    color: black;
-    width: 860px;
-    height: 40px;
-    padding-left: 39px;
-    border-radius: 5px;
-    border: 1px solid #EBEBF1;
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 16px;
+  font-style: normal;
+  font-weight: normal;
+  font-family: "Roboto", "san-serif";
+  color: black;
+  width: 899px;
+  height: 40px;
+  padding-left: 39px;
+  border-radius: 5px;
+  border: 1px solid #ebebf1;
 }
 
 .form__button {
-    width: 24px;
-    height: 24px;
-    border: none;
-    background-color: transparent;
-    background-image:
-      url("../../images/Ellipse.svg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    opacity: 1;
-    transition: .6s linear;
-    position: absolute;
-    top: 8px;
-    left: 10px;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../../images/Ellipse.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  opacity: 1;
+  transition: 0.6s linear;
+  position: absolute;
+  top: 8px;
+  left: 10px;
 }
 
 .form__button:hover {
-    opacity: .6;
+  opacity: 0.6;
 }
 
 @media screen and (max-width: 1210px) {
-    .form__input {
-        width: 420px;
-    }
+  .form__input {
+    width: 459px;
+  }
 }
 
 @media screen and (max-width: 767px) {
-    .form__input {
-        width: calc(375px - 49px);
-        padding: 0 0 0 49px;
-        margin-right: 0;
-        border: none;
-        border-top: 1px solid #E5E5E5;
-        border-radius: 0;
-    }
+  .form {
+    width: 100%;
+  }
+  .form__input {
+    width: 100%;
+    padding: 0 0 0 49px;
+    margin-right: 0;
+    border: none;
+    border-top: 1px solid #e5e5e5;
+    border-radius: 0;
+  }
 
-    .form__button {
-        left: 20px;
-    }
+  .form__button {
+    left: 20px;
+  }
 }
