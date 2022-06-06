@@ -17,6 +17,10 @@
   border: 1px solid #ebebf1;
 }
 
+.form__input::placeholder {
+  color: #bbc4d6;
+}
+
 .form__button {
   width: 24px;
   height: 24px;
